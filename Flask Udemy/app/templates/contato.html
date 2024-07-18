@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contatos</title>
+</head>
+
+<body>
+    <div>
+        <a href="{{url_for('sobre')}}">Quem somos / </a> <!--link para a página sobre-->
+        <a href="{{url_for('homepage')}}">Volte para página inicial</a> <!--link para a página principal-->
+    </div>
+
+    <div class="conteiner">  <!--conteiner é uma classe do bootstrap-->
+        <div class="row">   <!--divi com a classe row-->
+            <form action="" method="get">  <!--form com action vazio e method get-->
+                <div class="col=9">  
+                    Digite algo para pesquisar
+                    <input type="text" name="pesquisa" id="" class="form-control">
+                </div>
+                <div class="col=3">
+                    <button type="submit">Pesquisar</button>  <!--botão de submit para pesquisa-->
+                </div>
+            </form>
+        </div>
+    </div>
+    
+</body>
+</html>
